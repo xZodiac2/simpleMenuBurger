@@ -25,7 +25,7 @@ class App extends Component {
         this.menuButton = this.refToMenuButton.current
     }
 
-    doMenuIsOpen = false
+    MenuIsOpen = false
 
     openMenu = () => {
         if (this.doMenuIsOpen === false) {
