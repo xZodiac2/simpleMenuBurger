@@ -12,7 +12,7 @@ class App extends Component {
         this.refToMenuButton = React.createRef()
         this.state = {
             offset: 0,
-            rotateDegress: 0
+            rotateDegree: 0
         }
     }
 
@@ -25,23 +25,23 @@ class App extends Component {
         this.menuButton = this.refToMenuButton.current
     }
 
-    MenuIsOpen = false
+    menuIsOpen = false
 
     openMenu = () => {
-        if (this.doMenuIsOpen === false) {
-            this.doMenuIsOpen = true
+        if (this.menuIsOpen === false) {
+            this.menuIsOpen = true
             this.setState(() => {
                 return {
                     offset: this.menuContainerWidth,
-                    rotateDegress: 0
+                    rotateDegree: 0
                 }
             })
-        } else if (this.doMenuIsOpen === true) {
-            this.doMenuIsOpen = false
+        } else if (this.menuIsOpen === true) {
+            this.menuIsOpen = false
             this.setState(() => {
                 return {
                     offset: 0,
-                    rotateDegress: 90
+                    rotateDegree: 90
                 }
             })
         }
