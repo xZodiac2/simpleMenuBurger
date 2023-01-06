@@ -1,13 +1,45 @@
-body {
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+.container .menu-burger {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.container .menu-burger .button {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 100%;
+  transition: transform 0.3s;
+}
+.container .menu-burger .button p {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  line-height: 0.3;
+  font-size: 30px;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container .menu-burger .menu-container {
+  padding: 0 0 0 20px;
+  overflow: hidden;
 }
+.container .menu-burger .menu-container .menu {
+  min-width: 200px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  position: relative;
+  right: 0;
+  transition: right 0.5s;
+}
+.container .menu-burger .menu-container .menu .menu-item {
+  display: flex;
+  align-items: center;
+}
+.container .menu-burger .menu-container .menu .menu-item img {
+  min-width: 30px;
+}/*# sourceMappingURL=index.css.map */
